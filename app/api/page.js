@@ -16,6 +16,7 @@ export default async function AdminPage() {
     GROUP BY e.id
     ORDER BY e.id DESC
   `);
+  //this query calls table's exercies, proram_exercies and programs
 
   return (
     <div className="pageWrapper">
@@ -32,7 +33,8 @@ export default async function AdminPage() {
             Manage exercises, update instructions, and modify program junction links.
           </p>
         </div>
-        <AdminTable exercises={exercises} /> /** component htl ka admin table ko u thone htrr dl */
+        <AdminTable exercises={exercises} />
+        {/* component htl ka admin table ko u thone htrr dl, frontend ko data poh dl */}
       </main>
     </div>
   );

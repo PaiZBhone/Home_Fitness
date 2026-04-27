@@ -1,7 +1,7 @@
 "use server";
 //update add delete exercises, update instructions, and modify program junction links
 import { mysqlPool } from "@/utils/db";
-import { revalidatePath } from "next/cache";
+import { revalidatePath } from "next/cache"; //refresh the page ater changes
 
 // 1. Delete an Exercise
 export async function deleteExercise(exerciseId) {
