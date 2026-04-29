@@ -53,7 +53,7 @@ export default function AddExerciseForm({ onClose }) {
       [programId]: { ...prev[programId], [field]: value },
     }));
   };
-//handle submit
+//handle submit Functions
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);

@@ -68,7 +68,7 @@ export async function updateExercise(id, basicData, assignedPrograms) {
       [basicData.name, basicData.muscle_group_id, basicData.video_url, basicData.instructions, id]
     );
 
-    // B. The Magic Trick: Delete all old program links for this exercise
+    // B.Delete all old program links for this exercise
     await mysqlPool.promise().query("DELETE FROM program_exercises WHERE exercise_id = ?", [id]);
 
     // C. Insert the newly selected program links
